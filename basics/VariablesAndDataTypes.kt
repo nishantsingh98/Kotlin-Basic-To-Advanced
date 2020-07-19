@@ -31,7 +31,20 @@ fun main(args: String) {
 }
 
 fun loops() {
+    for (i in 1..10)
+        print("i = ${i} ")
+//FOR LOOP
+    val a = arrayOf(1, 2, 3, 4)
+    for (i in a.indices) {
+        print(a[i])
+    }
 
+//WHILE LOOP
+    var i = 1
+    while (i < 10) {
+        print("i = ${i}")
+        i++
+    }
 }
 
 fun collections() {
@@ -51,11 +64,10 @@ fun collections() {
     mutableList.remove(0)
     print("mutable list $mutableList")
 //SET
-    val immutableSet= setOf(1,2,3,3)
+    val immutableSet = setOf(1, 2, 3, 3)
     print("immutable set $immutableSet")
 
-    val mutableSet = mutableSetOf(1,2,3,3)
+    val mutableSet = mutableSetOf(1, 2, 3, 3)
     mutableSet.add(4)
     print("mutable set $mutableSet")
-
 }
