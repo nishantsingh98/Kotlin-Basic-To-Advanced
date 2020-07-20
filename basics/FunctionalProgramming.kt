@@ -3,6 +3,9 @@ package basics
 fun main(args: Array<String>) {
     //LAMBDA FUNCTIONS
     lambda()
+
+    //HIGHER ORDER FUNCTIONS
+    higherOrderFunctions()
 }
 
 fun lambda() {
@@ -12,4 +15,8 @@ fun lambda() {
 
     //Lambda with 2 arguments (Int,Int) -> (Int)
     val add: (Int,Int) -> (Int) = { x: Int, y: Int -> x + y }
+}
+
+fun higherOrderFunctions() {
+
 }
