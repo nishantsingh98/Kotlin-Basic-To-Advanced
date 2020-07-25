@@ -1,6 +1,7 @@
 package basics
 
 fun main(args: Array<String>) {
+    //this is not a hashmap
     map()
 }
 
