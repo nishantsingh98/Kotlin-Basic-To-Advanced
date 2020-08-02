@@ -11,11 +11,11 @@ open class Hotel(val noOfRooms: Int, val price: Int) : roomService {
     companion object {
         val HotelName = "Singh Hotel"
         fun economySuite() = Hotel(100, 1000)
-        fun lorrySuite() = Hotel(5, 2000)
+        fun luxoriousSuite() = Hotel(5, 2000)
     }
 
     override fun roomService() {
-        if (noOfRooms < 10) {
+        if (noOfRooms <= 10) {
             println("can call room service")
         } else
             println("get a room first")
@@ -25,4 +25,5 @@ open class Hotel(val noOfRooms: Int, val price: Int) : roomService {
 fun main() {
     val myHotel = Hotel.economySuite()
     print("Name: ${Hotel.HotelName} \nNo of Rooms: ${myHotel.noOfRooms} \nPrice: ${myHotel.price}")
+    myHotel.roomService()
 }
