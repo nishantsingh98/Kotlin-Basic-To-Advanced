@@ -14,9 +14,22 @@ class Timeline<E> {
     }
 }
 
+//generic function
+fun <E> timelineOf(vararg elements: E): Timeline<E> {
+    val result = Timeline<E>()
+    for (element in elements) {
+        result.addElement(element)
+        println("added element $element")
+    }
+    return result
+}
+
+
 fun main() {
     val timeLine: Timeline<Int> = Timeline()
 
     timeLine.addElement(2)
     println(timeLine.latestEvent())
+
+    val timeline2= timelineOf(3,4.5,"...")
 }
