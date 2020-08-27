@@ -8,7 +8,7 @@ abstract class AbstractShape(val name: String) {
     abstract fun area(): Double
 }
 
-class AbstractCircle(name: String, val radius: Double) : Shape(name) {
+class AbstractCircle(name: String, val radius: Double) : AbstractShape(name) {
     override fun area() = Math.PI * radius.pow(2.0)
 }
 
